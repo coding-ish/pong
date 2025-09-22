@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cx3jwbrwrpt1v"]
+[gd_scene load_steps=4 format=3 uid="uid://cq3vpsxuo8qdh"]
 
 [ext_resource type="Script" path="res://ball_body_movement.gd" id="1_ivqbc"]
 

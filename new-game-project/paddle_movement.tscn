@@ -23,10 +23,10 @@ position = Vector2(-1, 322.312)
 shape = SubResource("RectangleShape2D_h31yd")
 debug_color = Color(0, 0, 0, 0.42)
 
-[node name="Left Paddle Shape" type="ShapeCast2D" parent="Left Paddle/Left Paddle collision"]
+[node name="ShapeCast2D" type="ShapeCast2D" parent="Left Paddle/Left Paddle collision"]
 position = Vector2(0, -311.312)
 shape = SubResource("RectangleShape2D_y31nc")
-target_position = Vector2(0, 628)
+target_position = Vector2(-1, 628)
 
 [node name="Right Paddle Parent" type="Node2D" parent="."]
 
@@ -40,4 +40,4 @@ shape = SubResource("RectangleShape2D_sx1ni")
 [node name="Right Paddle Shape" type="ShapeCast2D" parent="Right Paddle Parent/Right Paddle/Right Paddle Collision"]
 position = Vector2(0, -317.5)
 shape = SubResource("RectangleShape2D_qexrv")
-target_position = Vector2(0, 631)
+target_position = Vector2(1, 631)
