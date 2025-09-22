@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4slpq4nrgki3"]
+
+[ext_resource type="Script" path="res://left_paddle_movement.gd" id="1_wg2ai"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h31yd"]
+size = Vector2(20, 595)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Left Paddle" type="CharacterBody2D" parent="."]
+script = ExtResource("1_wg2ai")
+
+[node name="Left Paddle collision" type="CollisionShape2D" parent="Left Paddle"]
+position = Vector2(3, 469)
+shape = SubResource("RectangleShape2D_h31yd")
