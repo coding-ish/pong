@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cq3vpsxuo8qdh"]
+
+[ext_resource type="Script" path="res://ball_body_movement.gd" id="1_ivqbc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nglik"]
+radius = 25.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n0ojp"]
+radius = 25.0
+
+[node name="Ball" type="Node2D"]
+
+[node name="ballBody" type="CharacterBody2D" parent="."]
+position = Vector2(575, 330)
+script = ExtResource("1_ivqbc")
+
+[node name="ballBodyCollision" type="CollisionShape2D" parent="ballBody"]
+shape = SubResource("CircleShape2D_nglik")
+
+[node name="ballBodyShape" type="ShapeCast2D" parent="ballBody/ballBodyCollision"]
+modulate = Color(0.858796, 0.788275, 0.895633, 1)
+shape = SubResource("CircleShape2D_n0ojp")
+target_position = Vector2(0, 0)
