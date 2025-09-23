@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-[gd_scene load_steps=6 format=3 uid="uid://dlbu7q16rcojg"]
-
-[ext_resource type="Script" path="res://left_paddle_movement.gd" id="1_wg2ai"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_h31yd"]
-size = Vector2(20, 648.625)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_y31nc"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_sx1ni"]
-size = Vector2(22, 647)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qexrv"]
-=======
 [gd_scene load_steps=8 format=3 uid="uid://dlbu7q16rcojg"]
 
 [ext_resource type="Script" path="res://left_paddle_movement.gd" id="1_wg2ai"]
@@ -32,7 +17,6 @@ blend_mode = 4
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qexrv"]
 size = Vector2(0, 325)
->>>>>>> feature_paddles
 
 [node name="Left Paddle Parent" type="Node2D"]
 
@@ -40,22 +24,12 @@ size = Vector2(0, 325)
 script = ExtResource("1_wg2ai")
 
 [node name="Left Paddle collision" type="CollisionShape2D" parent="Left Paddle"]
-<<<<<<< HEAD
-top_level = true
-=======
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
->>>>>>> feature_paddles
 position = Vector2(-1, 322.312)
 shape = SubResource("RectangleShape2D_h31yd")
 debug_color = Color(0, 0, 0, 0.42)
 
-<<<<<<< HEAD
-[node name="ShapeCast2D" type="ShapeCast2D" parent="Left Paddle/Left Paddle collision"]
-position = Vector2(0, -311.312)
-shape = SubResource("RectangleShape2D_y31nc")
-target_position = Vector2(-1, 628)
-=======
 [node name="Left Paddle Shape" type="ShapeCast2D" parent="Left Paddle/Left Paddle collision"]
 modulate = Color(4.18738e-06, 0.648225, 0.403422, 1)
 self_modulate = Color(0.0452745, 0.749469, 0.347184, 1)
@@ -63,35 +37,23 @@ top_level = true
 position = Vector2(0, 155)
 shape = SubResource("RectangleShape2D_y31nc")
 target_position = Vector2(0, 325)
->>>>>>> feature_paddles
 
 [node name="Right Paddle Parent" type="Node2D" parent="."]
 
 [node name="Right Paddle" type="CharacterBody2D" parent="Right Paddle Parent"]
 position = Vector2(1152, 0)
-<<<<<<< HEAD
-
-[node name="Right Paddle Collision" type="CollisionShape2D" parent="Right Paddle Parent/Right Paddle"]
-=======
 script = ExtResource("2_x3mfs")
 
 [node name="Right Paddle Collision" type="CollisionShape2D" parent="Right Paddle Parent/Right Paddle"]
 modulate = Color(0.980392, 0.858824, 0.792157, 1)
 self_modulate = Color(0.976471, 0, 0, 0.984314)
->>>>>>> feature_paddles
 position = Vector2(1, 313.5)
 shape = SubResource("RectangleShape2D_sx1ni")
 
 [node name="Right Paddle Shape" type="ShapeCast2D" parent="Right Paddle Parent/Right Paddle/Right Paddle Collision"]
-<<<<<<< HEAD
-position = Vector2(0, -317.5)
-shape = SubResource("RectangleShape2D_qexrv")
-target_position = Vector2(1, 631)
-=======
 modulate = Color(0.873247, 0.00014059, 0.257085, 1)
 top_level = true
 material = SubResource("CanvasItemMaterial_2c8w5")
 position = Vector2(0, -317.5)
 shape = SubResource("RectangleShape2D_qexrv")
 target_position = Vector2(0, 325)
->>>>>>> feature_paddles

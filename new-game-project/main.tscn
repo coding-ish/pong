@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://deun4716rb3tb"]
+[gd_scene load_steps=3 format=3 uid="uid://deun4716rb3tb"]
+
+[ext_resource type="PackedScene" path="res://paddle_movement.tscn" id="1_re1bo"]
+[ext_resource type="PackedScene" uid="uid://cq3vpsxuo8qdh" path="res://ball.tscn" id="2_axbsa"]
 
 [node name="Main" type="Node2D"]
+
+[node name="Left Paddle Parent" parent="." instance=ExtResource("1_re1bo")]
+
+[node name="Ball" parent="Left Paddle Parent" instance=ExtResource("2_axbsa")]
