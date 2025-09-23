@@ -18,5 +18,6 @@ script = ExtResource("1_ivqbc")
 shape = SubResource("CircleShape2D_nglik")
 
 [node name="ballBodyShape" type="ShapeCast2D" parent="ballBody/ballBodyCollision"]
+modulate = Color(0.858796, 0.788275, 0.895633, 1)
 shape = SubResource("CircleShape2D_n0ojp")
 target_position = Vector2(0, 0)
