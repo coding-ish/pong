@@ -18,6 +18,8 @@ size = Vector2(1600, 1200)
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+modulate = Color(0.439049, 0.439049, 0.439049, 1)
+light_mask = 393217
 position = Vector2(594, 233)
 shape = SubResource("RectangleShape2D_ugpmu")
 

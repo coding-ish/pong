@@ -14,7 +14,7 @@ func _process(delta):
 		velocity = velocity.normalized() * SPEED
 		
 func get_input():
-	var input_direction = Input.get_vector("ui_left","ui_right","up_right_paddle","down_right_paddle")
+	var input_direction = Input.get_vector("ui_left","ui_right","up_left_paddle","down_left_paddle")
 	velocity = input_direction * SPEED
 	
 func _physics_process(delta):
