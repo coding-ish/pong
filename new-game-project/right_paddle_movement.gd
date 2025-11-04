@@ -8,4 +8,5 @@ func get_input():
 	velocity = input_direction * SPEED
 	
 func _physics_process(delta):
+	_process(delta)
 	get_input()
