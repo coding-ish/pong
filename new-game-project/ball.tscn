@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://cq3vpsxuo8qdh"]
+[gd_scene load_steps=4 format=3 uid="uid://5vrve1scbrue"]
 
-[ext_resource type="Script" path="res://ball_body_movement.gd" id="1_ivqbc"]
+[ext_resource type="Script" uid="uid://cbyvibqw6ph1u" path="res://ball_body_movement.gd" id="1_ivqbc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nglik"]
 radius = 25.0
