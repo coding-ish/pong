@@ -1,29 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://deun4716rb3tb"]
+[gd_scene load_steps=2 format=3 uid="uid://deun4716rb3tb"]
 
 [ext_resource type="PackedScene" uid="uid://nhh4r48dwumu" path="res://paddle_movement.tscn" id="1_re1bo"]
-[ext_resource type="PackedScene" uid="uid://cq3vpsxuo8qdh" path="res://ball.tscn" id="2_axbsa"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ugpmu"]
-size = Vector2(1600, 1200)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kdw5a"]
-size = Vector2(1600, 1200)
 
 [node name="Main" type="Node2D"]
 
-[node name="Left Paddle Parent" parent="." instance=ExtResource("1_re1bo")]
-
-[node name="Ball" parent="Left Paddle Parent" instance=ExtResource("2_axbsa")]
-
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-modulate = Color(0.439049, 0.439049, 0.439049, 1)
-light_mask = 393217
-position = Vector2(594, 233)
-shape = SubResource("RectangleShape2D_ugpmu")
-
-[node name="ShapeCast2D" type="ShapeCast2D" parent="Area2D/CollisionShape2D"]
-visibility_layer = 3
-z_index = -1
-shape = SubResource("RectangleShape2D_kdw5a")
+[node name="playerPaddle" parent="." instance=ExtResource("1_re1bo")]
