@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://deun4716rb3tb"]
-
-[ext_resource type="PackedScene" uid="uid://nhh4r48dwumu" path="res://paddle_movement.tscn" id="1_re1bo"]
-
-[node name="Main" type="Node2D"]
-
-[node name="playerPaddle" parent="." instance=ExtResource("1_re1bo")]

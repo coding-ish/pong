@@ -1,23 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://5vrve1scbrue"]
+[gd_scene load_steps=3 format=3 uid="uid://5vrve1scbrue"]
 
-[ext_resource type="Script" uid="uid://cbyvibqw6ph1u" path="res://ball_body_movement.gd" id="1_ivqbc"]
+[ext_resource type="Script" uid="uid://ulk76r85flaw" path="res://ball.gd" id="1_x8fbi"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_nglik"]
-radius = 75.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_cbx31"]
+radius = 64.49806
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_n0ojp"]
-radius = 75.0
+[node name="ball" type="CharacterBody2D"]
+script = ExtResource("1_x8fbi")
 
-[node name="Ball" type="Node2D"]
+[node name="Polygon2D" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(0, -64, 32, -56, 56, -32, 64, 0, 56, 32, 32, 56, 0, 64, -32, 56, -56, 32, -64, 0, -56, -32, -32, -56)
 
-[node name="ballBody" type="CharacterBody2D" parent="."]
-position = Vector2(575, 330)
-script = ExtResource("1_ivqbc")
-
-[node name="ballBodyCollision" type="CollisionShape2D" parent="ballBody"]
-shape = SubResource("CircleShape2D_nglik")
-
-[node name="ballBodyShape" type="ShapeCast2D" parent="ballBody/ballBodyCollision"]
-modulate = Color(0.858796, 0.788275, 0.895633, 1)
-shape = SubResource("CircleShape2D_n0ojp")
-target_position = Vector2(0, 0)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_cbx31")

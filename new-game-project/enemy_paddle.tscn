@@ -1,18 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://nhh4r48dwumu"]
+[gd_scene load_steps=4 format=3 uid="uid://b5hi0aohuwcqq"]
 
-[ext_resource type="Texture2D" uid="uid://sytmtrsq0vb4" path="res://1.png" id="1_l1nea"]
-[ext_resource type="Script" uid="uid://cydk6r5xba337" path="res://player_paddle.gd" id="1_qulyd"]
+[ext_resource type="Texture2D" uid="uid://sytmtrsq0vb4" path="res://1.png" id="1_0dvuu"]
+[ext_resource type="Script" uid="uid://d3edcqxw7h2my" path="res://enemy_paddle.gd" id="1_qu04v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n4t28"]
 size = Vector2(16, 240)
 
-[node name="playerPaddle" type="CharacterBody2D"]
-script = ExtResource("1_qulyd")
+[node name="enemyPaddle" type="CharacterBody2D"]
+script = ExtResource("1_qu04v")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 1.4573336e-05)
 scale = Vector2(0.06250001, 0.93750006)
-texture = ExtResource("1_l1nea")
+texture = ExtResource("1_0dvuu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 modulate = Color(0, 0, 0, 1)
